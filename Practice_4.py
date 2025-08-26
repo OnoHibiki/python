@@ -7,6 +7,8 @@ employees = [
 
 over_30 = [e for e in employees if e["age"] >= 30]
 
+all = [f'{e["name"]}({e["dept"]} / {e["age"]}歳)' for e in employees]
+
 labels = [f'{e["name"]}({e["dept"]} / {e["age"]}歳)' for e in over_30]
 
 dept_counts = {}
@@ -16,3 +18,4 @@ for e in employees:
 
 print("30歳以上:", labels)
 print("部署ごとの人数:", dept_counts)
+print("全員:", all)
