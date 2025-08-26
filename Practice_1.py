@@ -10,7 +10,7 @@ def filter_over_30(numbers):
 
 # 20代だけを抽出する関数
 def filter_age_20(numbers):
-    return [age for age in numbers if 20 <= age & age <= 29]
+    return [age for age in numbers if 20 <= age <= 29]
 
 
 print("社員データ：", ages)
